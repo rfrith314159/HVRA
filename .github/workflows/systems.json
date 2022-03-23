@@ -1,0 +1,109 @@
+{
+    "systems": [
+        {
+            "geotype" : "point",
+            "buffer_distance" : 0,
+            "source" : "C:/Users/russ.frith/P1/Data/UTPublicSchools/UTPublicSchools.shp",
+            "designation" : "infrastructure",
+            "name" : "schlName",
+            "catIdx" : 0,
+            "referenceField" : "NAME",
+            "subtypes" : "{ \"LEVEL_\": \"{'HIGH' : 1000, 'ELEMENTARY' : 500, 'MIDDLE' : 750, 'PREKINDERGARTEN' : 250}\" }"
+        },
+        {
+            "geotype" : "point",
+            "buffer_distance" : 0,
+            "source" : "C:/Users/russ.frith/P1/Data/UTPublicSchools/UTPublicSchools.shp",
+            "designation" : "people_and_property",
+            "name" : "schlNCESID",
+            "catIdx" : 1,
+            "referenceField" : "NCESID",
+            "subtypes" : "{ \"LEVEL_\": \"{'HIGH' : 1000, 'ELEMENTARY' : 500, 'MIDDLE' : 750, 'PREKINDERGARTEN' : 250}\" }"
+        },
+        {
+            "geotype" : "point",
+            "buffer_distance" : 0,
+            "source" : "C:/Users/russ.frith/P1/Data/UTPublicSchools/UTPublicSchools.shp",
+            "designation" : "people_and_property",
+            "name" : "schlTele",
+            "catIdx" : 2,
+            "referenceField" : "TELEPHONE",
+            "subtypes" : "{ \"LEVEL_\": \"{'HIGH' : 1000, 'ELEMENTARY' : 500, 'MIDDLE' : 750, 'PREKINDERGARTEN' : 250}\" }"
+        },
+        {
+            "geotype" : "line",
+            "buffer_distance" : 10000,
+            "source" : "C:/Users/russ.frith/P1/Data/UT_Raods.shp",
+            "designation" : "people_and_property",
+            "name" : "I1",
+            "catIdx" : 0,
+            "referenceField" : "NAME",
+            "subtypes" : "{ \"BASENAME\": \"{'70' : 10000, '80' : 500, '215' : 20000, '15' : 0}\" }"
+        },
+        {
+            "geotype" : "line",
+            "buffer_distance" : 10000,
+            "source" : "C:/Users/russ.frith/P1/Data/UT_Raods.shp",
+            "designation" : "infrastructure",
+            "name" : "I2",
+            "catIdx" : 1,
+            "referenceField" : "OBJECTID",
+            "subtypes" : "{ \"BASENAME\": \"{'70' : 10000, '80' : 500, '215' : 20000, '15' : 0}\" }"
+        },
+        {
+            "geotype" : "polygon",
+            "buffer_distance" : 10000,
+            "source" : "C:/Users/russ.frith/P1/Data/UT_P0_Poly.shp",
+            "designation" : "people_and_property",
+            "name" : "P0",
+            "catIdx" : 0,
+            "referenceField" : "P0",
+            "subtypes" : "{}"
+        },
+        {
+            "geotype" : "polygon",
+            "buffer_distance" : 10000,
+            "source" : "C:/Users/russ.frith/P1/Data/UT_P1_Poly.shp",
+            "designation" : "infrastructure",
+            "name" : "P1",
+            "catIdx" : 1,
+            "referenceField" : "P1",
+            "subtypes" : "{}"
+        },
+        {
+            "geotype" : "polygon",
+            "buffer_distance" : 10000,
+            "source" : "C:/Users/russ.frith/P1/Data/UT_P2_Poly.shp",
+            "designation" : "infrastructure",
+            "name" : "p2",
+            "catIdx" : 2,
+            "referenceField" : "p2",
+            "subtypes" : "{}"
+        },
+        {
+            "geotype" : "raster",
+            "buffer_distance" : 0,
+            "source" :  "C:/Users/russ.frith/P1/Data/RDS-2020-0016_Utaha/UT/BP_UT.tif",
+            "designation" : "raster mask"        
+        },
+        {
+            "geotype" : "polygon",
+            "buffer_distance" : 0,
+            "source" :  "C:/Users/russ.frith/P1/Data/Utah_County_Boundaries/Counties.shp",
+            "designation" : "aoi" 
+        }
+    ],
+    "configuration": [
+        {
+            "configtype" : "parameter",
+            "scale" : 3,
+            "designation" : "hex scale" 
+        },
+        {
+            "configtype" : "parameter",
+            "source" :  "C:/Users/russ.frith/P1/Data/buffers/",
+            "designation" : "scratch workspace" 
+        }        
+    ]
+
+}
